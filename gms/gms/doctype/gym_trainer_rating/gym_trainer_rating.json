@@ -42,7 +42,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-28 16:06:43.767939",
+ "modified": "2024-02-29 17:10:16.955250",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Trainer Rating",
@@ -61,7 +61,10 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
 }

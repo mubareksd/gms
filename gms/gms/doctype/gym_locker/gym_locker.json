@@ -27,7 +27,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-28 16:53:36.843945",
+ "modified": "2024-02-29 17:10:51.244866",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Locker",
@@ -67,7 +67,10 @@
    "share": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
 }

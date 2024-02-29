@@ -40,7 +40,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-28 16:55:00.375567",
+ "modified": "2024-02-29 17:09:11.309127",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Member Measurement",
@@ -81,7 +81,10 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
 }

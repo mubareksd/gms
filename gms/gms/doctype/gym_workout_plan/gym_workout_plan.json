@@ -39,7 +39,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-28 15:20:20.609297",
+ "modified": "2024-02-29 17:08:20.870583",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Workout Plan",
@@ -79,7 +79,10 @@
    "share": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
 }

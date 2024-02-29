@@ -66,7 +66,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-29 14:32:08.352369",
+ "modified": "2024-02-29 17:09:00.857299",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Member",
@@ -111,5 +111,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1
 }

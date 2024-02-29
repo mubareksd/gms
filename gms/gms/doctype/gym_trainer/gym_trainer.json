@@ -13,6 +13,7 @@
   "user",
   "route",
   "published",
+  "image",
   "column_break_gfej",
   "email",
   "phone",
@@ -86,13 +87,18 @@
    "fieldname": "published",
    "fieldtype": "Check",
    "label": "Published"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-02-29 15:01:11.779974",
+ "modified": "2024-02-29 17:07:30.245120",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Trainer",
@@ -142,8 +148,11 @@
    "share": 1
   }
  ],
+ "quick_entry": 1,
  "route": "trainers",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
 }
