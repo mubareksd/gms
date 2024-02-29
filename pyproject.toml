@@ -1,9 +1,9 @@
 [project]
-name = "gymv1"
+name = "gms"
 authors = [
-    { name = "Haron Computer", email = "contact@haroncomputer.com"}
+    { name = "Mubarek Seid Juhar", email = "hello@mubareksd.com"}
 ]
-description = "Gym"
+description = "Gym Management System"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]

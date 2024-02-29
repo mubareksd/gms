@@ -1,0 +1,170 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"dHn2cpk_I-\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Gym Management System</span>\",\"col\":12}},{\"id\":\"9rgNSt6mez\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Gym Classes\",\"col\":4}},{\"id\":\"9FvnkIgakM\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Gym Members\",\"col\":4}},{\"id\":\"Aw9Y57Xl8A\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Gym Trainers\",\"col\":4}},{\"id\":\"VZJESNaiBV\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"4AEj_N53_H\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Shortcuts</b></span>\",\"col\":12}},{\"id\":\"J2YZHcGhg8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Class\",\"col\":3}},{\"id\":\"oTzt-xDK-S\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Class Booking\",\"col\":3}},{\"id\":\"msr-vQXIOP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Equipment\",\"col\":3}},{\"id\":\"uQJnjW33iS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Exercise\",\"col\":3}},{\"id\":\"F7Vx-MPi3t\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Locker\",\"col\":3}},{\"id\":\"hXXUQqyu3c\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Locker Booking\",\"col\":3}},{\"id\":\"3zt_S1R95a\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Member\",\"col\":3}},{\"id\":\"4AHdp9pIf-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Member Measurement\",\"col\":3}},{\"id\":\"u_tKvkpDfI\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Membership\",\"col\":3}},{\"id\":\"vvcbplOOvn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Membership Type\",\"col\":3}},{\"id\":\"uFBigJFXQX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Payment\",\"col\":3}},{\"id\":\"SxRSmpyD84\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Settings\",\"col\":3}},{\"id\":\"fPKIheYxrQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Trainer\",\"col\":3}},{\"id\":\"CigYYYw54A\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Trainer Rating\",\"col\":3}},{\"id\":\"3WyYmc4J0n\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Trainer Subscription\",\"col\":3}},{\"id\":\"j-6QtUto44\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Workout Plan\",\"col\":3}}]",
+ "creation": "2024-02-28 13:22:43.212725",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-energy-points",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Gym Management System",
+ "links": [],
+ "modified": "2024-02-28 16:59:24.987835",
+ "modified_by": "Administrator",
+ "module": "Gms",
+ "name": "Gym Management System",
+ "number_cards": [
+  {
+   "label": "Gym Classes",
+   "number_card_name": "Gym Classes"
+  },
+  {
+   "label": "Gym Members",
+   "number_card_name": "Gym Members"
+  },
+  {
+   "label": "Gym Trainers",
+   "number_card_name": "Gym Trainers"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Trainer Subscription",
+   "link_to": "Gym Trainer Subscription",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Trainer Rating",
+   "link_to": "Gym Trainer Rating",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Member Measurement",
+   "link_to": "Gym Member Measurement",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Settings",
+   "link_to": "Gym Setting",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Locker",
+   "link_to": "Gym Locker",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Membership",
+   "link_to": "Gym Membership",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Equipment",
+   "link_to": "Gym Equipment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Payment",
+   "link_to": "Gym Payment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Class",
+   "link_to": "Gym Class",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Member",
+   "link_to": "Gym Member",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Membership Type",
+   "link_to": "Gym Membership Type",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Class Booking",
+   "link_to": "Gym Class Booking",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Workout Plan",
+   "link_to": "Gym Workout Plan",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Locker Booking",
+   "link_to": "Gym Locker Booking",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Trainer",
+   "link_to": "Gym Trainer",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Exercise",
+   "link_to": "Gym Exercise",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Gym Management System"
+}

@@ -1,5 +1,5 @@
-app_name = "gymv1"
-app_title = "Gymv1"
+app_name = "gms"
+app_title = "Gms"
 app_publisher = "Haron Computer"
 app_description = "Gym"
 app_email = "contact@haroncomputer.com"
@@ -10,15 +10,15 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/gymv1/css/gymv1.css"
-# app_include_js = "/assets/gymv1/js/gymv1.js"
+# app_include_css = "/assets/gms/css/gms.css"
+# app_include_js = "/assets/gms/js/gms.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/gymv1/css/gymv1.css"
-# web_include_js = "/assets/gymv1/js/gymv1.js"
+# web_include_css = "/assets/gms/css/gms.css"
+# web_include_js = "/assets/gms/js/gms.js"
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "gymv1/public/scss/website"
+# website_theme_scss = "gms/public/scss/website"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -36,7 +36,7 @@ app_license = "mit"
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "gymv1/public/icons.svg"
+# app_include_icons = "gms/public/icons.svg"
 
 # Home Pages
 # ----------
@@ -60,43 +60,43 @@ app_license = "mit"
 
 # add methods and filters to jinja environment
 # jinja = {
-# 	"methods": "gymv1.utils.jinja_methods",
-# 	"filters": "gymv1.utils.jinja_filters"
+# 	"methods": "gms.utils.jinja_methods",
+# 	"filters": "gms.utils.jinja_filters"
 # }
 
 # Installation
 # ------------
 
-# before_install = "gymv1.install.before_install"
-# after_install = "gymv1.install.after_install"
+# before_install = "gms.install.before_install"
+# after_install = "gms.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "gymv1.uninstall.before_uninstall"
-# after_uninstall = "gymv1.uninstall.after_uninstall"
+# before_uninstall = "gms.uninstall.before_uninstall"
+# after_uninstall = "gms.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-# before_app_install = "gymv1.utils.before_app_install"
-# after_app_install = "gymv1.utils.after_app_install"
+# before_app_install = "gms.utils.before_app_install"
+# after_app_install = "gms.utils.after_app_install"
 
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "gymv1.utils.before_app_uninstall"
-# after_app_uninstall = "gymv1.utils.after_app_uninstall"
+# before_app_uninstall = "gms.utils.before_app_uninstall"
+# after_app_uninstall = "gms.utils.after_app_uninstall"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "gymv1.notifications.get_notification_config"
+# notification_config = "gms.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -135,39 +135,39 @@ app_license = "mit"
 
 # scheduler_events = {
 # 	"all": [
-# 		"gymv1.tasks.all"
+# 		"gms.tasks.all"
 # 	],
 # 	"daily": [
-# 		"gymv1.tasks.daily"
+# 		"gms.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"gymv1.tasks.hourly"
+# 		"gms.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"gymv1.tasks.weekly"
+# 		"gms.tasks.weekly"
 # 	],
 # 	"monthly": [
-# 		"gymv1.tasks.monthly"
+# 		"gms.tasks.monthly"
 # 	],
 # }
 
 # Testing
 # -------
 
-# before_tests = "gymv1.install.before_tests"
+# before_tests = "gms.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "gymv1.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "gms.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "gymv1.task.get_dashboard_data"
+# 	"Task": "gms.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -181,13 +181,13 @@ app_license = "mit"
 
 # Request Events
 # ----------------
-# before_request = ["gymv1.utils.before_request"]
-# after_request = ["gymv1.utils.after_request"]
+# before_request = ["gms.utils.before_request"]
+# after_request = ["gms.utils.after_request"]
 
 # Job Events
 # ----------
-# before_job = ["gymv1.utils.before_job"]
-# after_job = ["gymv1.utils.after_job"]
+# before_job = ["gms.utils.before_job"]
+# after_job = ["gms.utils.after_job"]
 
 # User Data Protection
 # --------------------
@@ -217,7 +217,7 @@ app_license = "mit"
 # --------------------------------
 
 # auth_hooks = [
-# 	"gymv1.auth.validate"
+# 	"gms.auth.validate"
 # ]
 
 # Automatically update python controller files with type annotations for this app.
