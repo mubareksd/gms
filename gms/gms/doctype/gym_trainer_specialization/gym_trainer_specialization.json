@@ -1,0 +1,33 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-04 13:49:58.734536",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "specialization"
+ ],
+ "fields": [
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Specialization",
+   "options": "Gym Specialization",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-04 13:50:29.091100",
+ "modified_by": "Administrator",
+ "module": "Gms",
+ "name": "Gym Trainer Specialization",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

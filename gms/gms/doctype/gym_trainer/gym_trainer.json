@@ -18,7 +18,7 @@
   "email",
   "phone",
   "specialization",
-  "experience"
+  "gender"
  ],
  "fields": [
   {
@@ -30,13 +30,10 @@
   },
   {
    "fieldname": "specialization",
-   "fieldtype": "Data",
-   "label": "Specialization"
-  },
-  {
-   "fieldname": "experience",
-   "fieldtype": "Data",
-   "label": "Experience"
+   "fieldtype": "Table MultiSelect",
+   "label": "Specialization",
+   "options": "Gym Trainer Specialization",
+   "reqd": 1
   },
   {
    "fieldname": "first_name",
@@ -48,12 +45,14 @@
   {
    "fieldname": "middle_name",
    "fieldtype": "Data",
-   "label": "Middle Name"
+   "label": "Middle Name",
+   "reqd": 1
   },
   {
    "fieldname": "last_name",
    "fieldtype": "Data",
-   "label": "Last Name"
+   "label": "Last Name",
+   "reqd": 1
   },
   {
    "fieldname": "full_name",
@@ -91,14 +90,21 @@
   {
    "fieldname": "image",
    "fieldtype": "Attach Image",
-   "label": "Image"
+   "label": "Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-02-29 17:07:30.245120",
+ "modified": "2024-03-04 13:51:29.807382",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Trainer",

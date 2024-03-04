@@ -8,9 +8,7 @@
   "trainer",
   "member",
   "start_date",
-  "end_date",
-  "payment",
-  "amended_from"
+  "end_date"
  ],
  "fields": [
   {
@@ -38,28 +36,12 @@
    "fieldname": "end_date",
    "fieldtype": "Date",
    "label": "End Date"
-  },
-  {
-   "fieldname": "payment",
-   "fieldtype": "Link",
-   "label": "Payment",
-   "options": "Gym Payment"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Gym Trainer Subscription",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-28 16:15:16.754988",
+ "modified": "2024-03-03 21:03:59.870533",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Trainer Subscription",

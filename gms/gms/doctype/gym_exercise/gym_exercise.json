@@ -5,16 +5,12 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1",
+  "exercise_name",
+  "muscle_group_targeted",
   "description",
   "equipment_needed"
  ],
  "fields": [
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name"
-  },
   {
    "fieldname": "description",
    "fieldtype": "Text Editor",
@@ -25,11 +21,22 @@
    "fieldtype": "Table",
    "label": "Equipment Needed",
    "options": "Gym Exercise Equipment"
+  },
+  {
+   "fieldname": "muscle_group_targeted",
+   "fieldtype": "Table MultiSelect",
+   "label": "Muscle Group Targeted",
+   "options": "Gym Exercise Muscle Group"
+  },
+  {
+   "fieldname": "exercise_name",
+   "fieldtype": "Data",
+   "label": "Exercise Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-29 17:10:42.772887",
+ "modified": "2024-03-03 20:54:24.932942",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Exercise",

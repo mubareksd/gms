@@ -1,29 +1,29 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "GYM-CLS.###",
+ "autoname": "format:GYM-CLS-{###}",
  "creation": "2024-02-28 13:30:15.060670",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1",
+  "class_details_section",
+  "branch",
+  "room",
+  "class_type",
+  "capacity",
+  "column_break_sjnv",
+  "class_name",
   "image",
   "description",
-  "trainers",
-  "duration",
-  "capacity",
   "status",
   "route",
-  "published"
+  "published",
+  "section_break_kqgc",
+  "trainers",
+  "section_break_dscj",
+  "schedule"
  ],
  "fields": [
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name",
-   "reqd": 1
-  },
   {
    "fieldname": "description",
    "fieldtype": "Text Editor",
@@ -36,13 +36,8 @@
    "options": "Gym Class Trainer"
   },
   {
-   "fieldname": "duration",
-   "fieldtype": "Data",
-   "label": "Duration"
-  },
-  {
    "fieldname": "capacity",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "Capacity"
   },
   {
@@ -68,17 +63,71 @@
    "fieldtype": "Attach Image",
    "label": "Image",
    "reqd": 1
+  },
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Class Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class_type",
+   "fieldtype": "Link",
+   "label": "Class Type",
+   "options": "Gym Class Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "schedule",
+   "fieldtype": "Table",
+   "label": "Schedule",
+   "options": "Gym Class Schedule"
+  },
+  {
+   "fieldname": "section_break_kqgc",
+   "fieldtype": "Section Break",
+   "label": "Class Personnel"
+  },
+  {
+   "fieldname": "section_break_dscj",
+   "fieldtype": "Section Break",
+   "label": "Class Schedule"
+  },
+  {
+   "fieldname": "class_details_section",
+   "fieldtype": "Section Break",
+   "label": "Class Details"
+  },
+  {
+   "fieldname": "column_break_sjnv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Gym Branch",
+   "reqd": 1
+  },
+  {
+   "depends_on": "branch",
+   "fieldname": "room",
+   "fieldtype": "Link",
+   "label": "Room",
+   "options": "Gym Room",
+   "reqd": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-02-29 17:08:50.610300",
+ "modified": "2024-03-04 11:29:55.773644",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Class",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -112,6 +161,15 @@
    "read": 1,
    "report": 1,
    "role": "Gym Member",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
    "share": 1
   }
  ],

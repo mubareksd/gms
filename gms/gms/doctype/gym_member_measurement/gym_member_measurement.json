@@ -8,7 +8,10 @@
   "member",
   "date",
   "weight",
-  "height"
+  "height",
+  "body_mass_index",
+  "body_fat_percentage",
+  "muscle_mass"
  ],
  "fields": [
   {
@@ -36,11 +39,26 @@
    "fieldname": "height",
    "fieldtype": "Float",
    "label": "Height"
+  },
+  {
+   "fieldname": "body_mass_index",
+   "fieldtype": "Data",
+   "label": "Body Mass Index"
+  },
+  {
+   "fieldname": "body_fat_percentage",
+   "fieldtype": "Data",
+   "label": "Body Fat Percentage"
+  },
+  {
+   "fieldname": "muscle_mass",
+   "fieldtype": "Data",
+   "label": "Muscle Mass"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-29 17:09:11.309127",
+ "modified": "2024-03-01 09:27:04.626214",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Member Measurement",

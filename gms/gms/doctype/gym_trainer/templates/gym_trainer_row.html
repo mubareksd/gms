@@ -1,4 +1,6 @@
-<div>
-	<a href="{{ doc.route }}">{{ doc.title or doc.name }}</a>
+<div class="col-2">
+    <img src="{{ doc.image }}" alt="{{ doc.title or doc.name }}">
+	<a href="{{ doc.route }}">{{ doc.full_name or doc.name }}</a>
+    <p>{{ doc.specialization }}</p>
 </div>
 <!-- this is a sample default list template -->

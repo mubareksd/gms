@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-01 09:10:37.797188",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "muscle_group"
+ ],
+ "fields": [
+  {
+   "fieldname": "muscle_group",
+   "fieldtype": "Link",
+   "label": "Muscle Group",
+   "options": "Gym Muscle Group"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-01 09:11:46.546181",
+ "modified_by": "Administrator",
+ "module": "Gms",
+ "name": "Gym Exercise Muscle Group",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

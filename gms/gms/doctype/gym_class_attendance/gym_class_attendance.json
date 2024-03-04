@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-04 12:00:16.111400",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "class",
+  "date",
+  "trainers_attendance",
+  "members_attendance"
+ ],
+ "fields": [
+  {
+   "fieldname": "class",
+   "fieldtype": "Link",
+   "label": "Class",
+   "options": "Gym Class"
+  },
+  {
+   "fieldname": "trainers_attendance",
+   "fieldtype": "Table",
+   "label": "Trainers Attendance",
+   "options": "Gym Trainer Attendance"
+  },
+  {
+   "fieldname": "members_attendance",
+   "fieldtype": "Table",
+   "label": "Members Attendance",
+   "options": "Gym Member Attendance"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-04 12:07:15.538718",
+ "modified_by": "Administrator",
+ "module": "Gms",
+ "name": "Gym Class Attendance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

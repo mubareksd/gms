@@ -1,0 +1,10 @@
+{% extends "templates/layout.html" %}
+
+{% block title %}{{ _("Home") }}{% endblock %}
+
+{% block page_content %}
+    {%  set member = frappe.db.get_value('Gym Member', {'email': frappe.session.user}) %}
+    {{ member }}
+
+    {{ frappe.session.user }}
+{% endblock %}
