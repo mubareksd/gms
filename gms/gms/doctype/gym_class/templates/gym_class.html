@@ -1,7 +1,69 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
-<h1>{{ title }}</h1>
-{% endblock %}
+<h1>{{ class_name }}</h1>
+    <p>{{ description }}</p>
 
-<!-- this is a sample default web page template -->
+{# Schedule #}
+{% if schedule %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title text-center text-primary font-weight-bold">Schedule</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    {% for schedulee in schedule %}
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary font-weight-bold">{{ schedulee.day_of_week }}</h5>
+                                <p class="card-text">{{ schedulee.start_time }} - {{ schedulee.end_time }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{# Trainers #}
+{% if trainers %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title text-center text-primary font-weight-bold">Trainers</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    {% for trainer in trainers %}
+                        {%
+                                set trainer = frappe.get_doc("Gym Trainer", trainer.trainer)
+                        %}
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{ trainer.image }}" class="img-fluid" alt="{{ trainer.full_name }}">
+                                <a href="/{{ trainer.route }}">{{ trainer.full_name or trainer.name }}</a>
+{#                                <h5 class="card-title text-primary font-weight-bold">{{ trainer.full_name }}</h5>#}
+                                <p class="card-text">
+                                    {% for specialization in trainer.specialization %}
+                                    {{ specialization.specialization }}
+                                    {% endfor %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

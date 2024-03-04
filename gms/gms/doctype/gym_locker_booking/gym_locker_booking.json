@@ -8,9 +8,7 @@
   "locker",
   "member",
   "booking_date",
-  "status",
-  "payment",
-  "amended_from"
+  "status"
  ],
  "fields": [
   {
@@ -45,28 +43,12 @@
    "label": "Status",
    "options": "Booked\nReleased",
    "reqd": 1
-  },
-  {
-   "fieldname": "payment",
-   "fieldtype": "Link",
-   "label": "Payment",
-   "options": "Gym Payment"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Gym Locker Booking",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-28 16:14:56.386591",
+ "modified": "2024-03-03 20:01:58.901214",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Locker Booking",

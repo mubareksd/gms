@@ -5,7 +5,8 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "name1",
+  "description"
  ],
  "fields": [
   {
@@ -14,11 +15,16 @@
    "in_list_view": 1,
    "label": "Name",
    "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-29 17:09:19.740347",
+ "modified": "2024-03-01 09:25:32.675869",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Equipment",

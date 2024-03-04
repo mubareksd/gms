@@ -5,19 +5,14 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1",
+  "plan_name",
   "description",
   "difficulty",
-  "gym_workout_plan_exercises"
+  "gym_workout_plan_exercises",
+  "route",
+  "published"
  ],
  "fields": [
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name",
-   "reqd": 1
-  },
   {
    "fieldname": "description",
    "fieldtype": "Text Editor",
@@ -35,11 +30,31 @@
    "fieldtype": "Table",
    "label": "Gym Workout Plan Exercises",
    "options": "Gym Workout Plan Exercise"
+  },
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plan Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2024-02-29 17:08:20.870583",
+ "modified": "2024-03-04 08:37:15.019250",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Workout Plan",
@@ -77,9 +92,19 @@
    "report": 1,
    "role": "Gym Member",
    "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
+   "share": 1
   }
  ],
  "quick_entry": 1,
+ "route": "workout-plans",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

@@ -6,6 +6,7 @@
  "engine": "InnoDB",
  "field_order": [
   "name1",
+  "room",
   "status"
  ],
  "fields": [
@@ -13,7 +14,7 @@
    "fieldname": "name1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name",
+   "label": "Number",
    "reqd": 1
   },
   {
@@ -21,13 +22,20 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Available\nBooked",
+   "options": "Available\nOccupied",
+   "reqd": 1
+  },
+  {
+   "fieldname": "room",
+   "fieldtype": "Link",
+   "label": "Room",
+   "options": "Gym Room",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-29 17:10:51.244866",
+ "modified": "2024-03-03 19:59:31.555479",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Locker",

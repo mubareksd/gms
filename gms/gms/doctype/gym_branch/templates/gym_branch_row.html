@@ -1,0 +1,8 @@
+{% set title = 'Article' %}
+
+{% if doc.published == 1 %}
+<div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+    <img src="{{ doc.image }}" alt="{{ doc.title or doc.name }}">
+	<a href="{{ doc.route }}">{{ doc.branch_name or doc.name }}</a>
+</div>
+{% endif %}

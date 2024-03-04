@@ -1,4 +1,7 @@
-<div>
-	<a href="{{ doc.route }}">{{ doc.title or doc.name }}</a>
+{% if doc.published == 1 and doc.status == 'Active' %}
+<div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+    <img src="{{ doc.image }}" alt="{{ doc.title or doc.name }}">
+	<a href="{{ doc.route }}">{{ doc.class_name or doc.name }}</a>
+    <p>{{ doc.class_type }}</p>
 </div>
-<!-- this is a sample default list template -->
+{% endif %}

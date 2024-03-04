@@ -5,26 +5,25 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "opening_hours"
+  "gym_name",
+  "image"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "gym_name",
    "fieldtype": "Data",
-   "label": "Name"
+   "label": "Gym Name"
   },
   {
-   "fieldname": "opening_hours",
-   "fieldtype": "Table",
-   "label": "Opening Hours",
-   "options": "Gym Setting Opening Hours"
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-02-29 17:07:46.826527",
+ "modified": "2024-03-03 21:10:31.429485",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Setting",

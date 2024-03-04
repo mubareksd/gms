@@ -10,11 +10,7 @@
   "column_break_yxvg",
   "member",
   "type",
-  "start_date",
-  "end_date",
-  "price",
-  "payment",
-  "amended_from"
+  "start_date"
  ],
  "fields": [
   {
@@ -37,17 +33,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "end_date",
-   "fieldtype": "Date",
-   "label": "End Date",
-   "read_only": 1
-  },
-  {
-   "fieldname": "price",
-   "fieldtype": "Currency",
-   "label": "Price"
-  },
-  {
    "fieldname": "column_break_yxvg",
    "fieldtype": "Column Break"
   },
@@ -57,28 +42,12 @@
    "label": "Type",
    "options": "Gym Membership Type",
    "reqd": 1
-  },
-  {
-   "fieldname": "payment",
-   "fieldtype": "Link",
-   "label": "Payment",
-   "options": "Gym Payment"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Gym Membership",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-29 13:53:08.046838",
+ "modified": "2024-03-03 19:47:21.620277",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Membership",

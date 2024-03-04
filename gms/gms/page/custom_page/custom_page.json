@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2024-03-01 11:06:53.735996",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2024-03-01 11:07:02.696907",
+ "modified_by": "Administrator",
+ "module": "Gms",
+ "name": "custom-page",
+ "owner": "Administrator",
+ "page_name": "custom-page",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Custom Page"
+}

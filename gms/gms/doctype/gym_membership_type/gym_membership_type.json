@@ -5,42 +5,31 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "description",
-  "duration",
+  "length",
   "price"
  ],
  "fields": [
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
+   "fieldname": "price",
+   "fieldtype": "Currency",
    "in_list_view": 1,
-   "label": "Name",
+   "label": "Price",
+   "non_negative": 1,
    "reqd": 1
   },
   {
-   "fieldname": "description",
-   "fieldtype": "Text Editor",
-   "label": "Description"
-  },
-  {
    "default": "Monthly",
-   "fieldname": "duration",
-   "fieldtype": "Select",
-   "label": "Duration",
-   "options": "Monthly"
-  },
-  {
-   "fieldname": "price",
-   "fieldtype": "Currency",
-   "label": "Price",
-   "non_negative": 1,
+   "fieldname": "length",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Length",
+   "options": "Monthly",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-29 17:09:26.259632",
+ "modified": "2024-03-03 19:49:16.606316",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Membership Type",
