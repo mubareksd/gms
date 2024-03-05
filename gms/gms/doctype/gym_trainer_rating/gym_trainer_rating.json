@@ -41,16 +41,17 @@
    "label": "Review"
   },
   {
+   "default": "Now",
    "fieldname": "date",
    "fieldtype": "Datetime",
    "label": "Date",
    "options": "Now",
-   "read_only": 1
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-01 09:22:51.619871",
+ "modified": "2024-03-05 09:23:10.966026",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Trainer Rating",
