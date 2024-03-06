@@ -1,31 +1,29 @@
-{% extends "templates/layout.html" %}
-
-{% block title %}{{ _("Services") }}{% endblock %}
-
-{% block page_content %}
-    <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="/assets/gms/img/breadcrumb-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="breadcrumb-text">
-                        <h2>Services</h2>
-                        <div class="bt-option">
-                            <a href="/">Home</a>
-                            <span>Services</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{% extends "templates/layout.html" %} {% block title %}{{ _("Services") }}{%
+endblock %} {% block page_content %}
+<!-- Breadcrumb Section Begin -->
+<section
+  class="breadcrumb-section set-bg"
+  data-setbg="/assets/gms/img/breadcrumb-bg.jpg"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="breadcrumb-text">
+          <h2>Services</h2>
+          <div class="bt-option">
+            <a href="/">Home</a>
+            <span>Services</span>
+          </div>
         </div>
-    </section>
-    <!-- Breadcrumb Section End -->
-{% endblock %}
-
-{% block page_script %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Breadcrumb Section End -->
+{% endblock %} {% block page_script %}
 <script>
-    $(document).ready(function() {
-        $("#services").addClass("active");
-    });
+  $(document).ready(function () {
+    $("#services").addClass("active");
+  });
 </script>
 {% endblock %}

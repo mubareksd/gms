@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb-text">
-                        <h2>Classes detail</h2>
+                        <h2>{{ class_name }}</h2>
                         <div class="bt-option">
                             <a href="/">Home</a>
                             <a href="/classes">Classes</a>
@@ -28,9 +28,6 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="class-details-text">
-                        <div class="cd-pic">
-                            <img src="{{ image }}" alt="">
-                        </div>
                         <div class="cd-text">
                             <div class="cd-single-item">
                                 <h3>{{ class_name }}</h3>
@@ -52,43 +49,31 @@
                         </div>
 
                    {% set trainers = frappe.db.sql("""
-                   SELECT `tabGym Trainer`.full_name, `tabGym Trainer`.image FROM `tabGym Class` INNER JOIN `tabGym Class Trainer` ON `tabGym Class`.name = `tabGym Class Trainer`.parent INNER JOIN `tabGym Trainer` ON `tabGym Class Trainer`.trainer = `tabGym Trainer`.name WHERE `tabGym Class`.name = %s
+                   SELECT `tabGym Trainer`.full_name, `tabGym Trainer`.weight, `tabGym Trainer`.height, `tabGym Trainer`.bio, `tabGym Trainer`.image FROM `tabGym Class` INNER JOIN `tabGym Class Trainer` ON `tabGym Class`.name = `tabGym Class Trainer`.parent INNER JOIN `tabGym Trainer` ON `tabGym Class Trainer`.trainer = `tabGym Trainer`.name WHERE `tabGym Class`.name = %s
                    """, name, as_dict=1) %}
-                   """) %}
 
                         {% for trainer in trainers %}
                         <div class="cd-trainer">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="cd-trainer-pic">
-                                        <img src="{{ trainer.image }}" alt="">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="cd-trainer-pic">
+                                            <img src="{{ trainer.image }}" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="cd-trainer-text">
-                                        <div class="trainer-title">
-                                            <h4>{{ trainer.full_name }}</h4>
-                                            <span>Gym Trainer</span>
+                                    <div class="col-md-6">
+                                        <div class="cd-trainer-text">
+                                            <div class="trainer-title">
+                                                <h4>{{ trainer.full_name }}</h4>
+                                                <span>Gym Trainer</span>
+                                            </div>
+                                            <p>{{ trainer.bio }}</p>
+                                            <ul class="trainer-info">
+                                                <li><span>Age</span>35</li>
+                                                <li><span>Weight</span>{{ trainer.weight }} kg</li>
+                                                <li><span>Height</span>{{ trainer.height }} cm</li>
+                                            </ul>
                                         </div>
-                                        <div class="trainer-social">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                                            <a href="#"><i class="fa fa-instagram"></i></a>
-                                            <a href="#"><i class="fa  fa-envelope-o"></i></a>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua viverra maecenas lacus
-                                            vel facilisis.</p>
-                                        <ul class="trainer-info">
-                                            <li><span>Age</span>35</li>
-                                            <li><span>Weight</span>148lbs</li>
-                                            <li><span>Height</span>10' 2``</li>
-                                            <li><span>Occupation</span>no-founder</li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua viverra maecenas lacus
-                                            vel facilisis. </p>
                                     </div>
                                 </div>
                             </div>

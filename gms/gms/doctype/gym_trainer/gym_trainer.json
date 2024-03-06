@@ -18,7 +18,12 @@
   "email",
   "phone",
   "specialization",
-  "gender"
+  "gender",
+  "date_of_birth",
+  "age",
+  "bio",
+  "weight",
+  "height"
  ],
  "fields": [
   {
@@ -98,13 +103,38 @@
    "fieldtype": "Link",
    "label": "Gender",
    "options": "Gender"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "bio",
+   "fieldtype": "Text Editor",
+   "label": "Bio"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-03-06 11:16:16.119714",
+ "modified": "2024-03-06 16:38:29.923795",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "Gym Trainer",
@@ -151,6 +181,15 @@
    "read": 1,
    "report": 1,
    "role": "Gym Member",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
    "share": 1
   }
  ],

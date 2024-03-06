@@ -1,7 +1,24 @@
-{% extends "templates/web.html" %}
+{% extends "templates/layout.html" %}
+
+{% block title %} {{ class_name }} {% endblock %}
 
 {% block page_content %}
-<h1>{{ title }}</h1>
+<!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="/assets/gms/img/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb-text">
+                        <h2>{{ full_name }}</h2>
+                        <div class="bt-option">
+                            <a href="/">Home</a>
+                            <a href="/trainers">Trainers</a>
+                            <span>{{ full_name }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
 {% endblock %}
-
-<!-- this is a sample default web page template -->
