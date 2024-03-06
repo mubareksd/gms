@@ -68,8 +68,8 @@ home_page = 'index'
 # Installation
 # ------------
 
-# before_install = "gms.install.before_install"
-# after_install = "gms.install.after_install"
+before_install = "gms.install.before_install"
+after_install = "gms.install.after_install"
 
 # Uninstallation
 # ------------

@@ -8,5 +8,6 @@ from frappe.website.website_generator import WebsiteGenerator
 class GymTrainer(WebsiteGenerator):
 	def validate(self):
 		self.set_full_name()
+		self.route = "trainers/" + self.name
 	def set_full_name(self):
 		self.full_name = " ".join(filter(None, [self.first_name, self.middle_name, self.last_name]))

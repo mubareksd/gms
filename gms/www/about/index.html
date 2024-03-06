@@ -1,1 +1,14 @@
 {% extends "templates/layout.html" %}
+
+{% block title %}{{ _("About") }}{% endblock %}
+
+{% block page_content %}
+{% endblock %}
+
+{% block page_scripts %}
+<script>
+    $(document).ready(function() {
+        $("#about").addClass("active");
+    });
+</script>
+{% endblock %}
