@@ -3,7 +3,26 @@
 {% block title %}{{ _("Profile") }}{% endblock %}
 
 {% block page_content %}
-{#    my classes [{'name': 'GYM-CLS-003', 'class_name': 'Cardio piasa 001', 'start_date': datetime.date(2024, 3, 7), 'end_date': datetime.date(2024, 4, 6)}]#}
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="/assets/gms/img/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb-text">
+                        <h2>Profile</h2>
+                        <div class="bt-option">
+                            <a href="/">Home</a>
+                            <span>Profile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Section Begin -->
+    <section class="class-details-section spad">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -46,9 +65,10 @@
             </div>
         </div>
     </div>
+    </section>
 {% endblock %}
 
-{% block page_scripts %}
+{% block page_script %}
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         // Data

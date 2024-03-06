@@ -1,79 +1,231 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{% block title %} {% endblock %}</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  {% block page_styles %} {% endblock %}
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/">
-                        {% set company = {
-                            "name": frappe.db.get_value("Gym Setting", None, "gym_name"),
-                            "image": frappe.db.get_value("Gym Setting", None, "image")
-                              }%}
-                        <img src="{{ company.image }}" alt="{{ company.name }}" width="30" height="24" />
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a id="home" class="nav-link" aria-current="page" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="about" class="nav-link" aria-current="page" href="/about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="classes" class="nav-link" aria-current="page" href="/classes">Classes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="trainers" class="nav-link" aria-current="page" href="/trainers">Trainers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="contact" class="nav-link" aria-current="page" href="/contact">Contact</a>
-                            </li>
-                        </ul>
-                        <span class="avatar">
-                            <a href="/me">
-                            <img src="https://media.istockphoto.com/id/1337144146/vector/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=BIbFwuv7FxTWvh5S3vB6bkT0Qv8Vn8N5Ffseq84ClGI=" alt="{{ frappe.session.user }}" width="30" height="24" />
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </nav>
-        </div>
-          {% block page_content %} {% endblock %}
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gym Template">
+    <meta name="keywords" content="Gym, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="/assets/gms/img/logo.png" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/assets/gms/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/gms/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/gms/css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="/assets/gms/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/gms/css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="/assets/gms/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="/assets/gms/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/gms/css/style.css" type="text/css">
+    {% block page_style %} {% endblock %}
+</head>
+<body>
+    <!-- Offcanvas Menu Begin --><!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
     </div>
 
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="fa fa-close"></i>
+        </div>
+        <nav class="canvas-menu mobile-menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/classes">Classes</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/trainers">Trainers</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="canvas-social">
+            {% if not frappe.session.user %}
+                <a href="/login"><i class="fa fa-sign-in"></i> Signin</a>
+            {% else %}
+                <a href="/profile"><i class="fa fa-user"></i> Profile</a>
+            {% endif %}
+        </div>
     </div>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    {% block page_scripts %} {% endblock %}
-  </body>
+    <!-- Offcanvas Menu Section End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="/assets/gms/img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="nav-menu">
+                        <ul>
+                            <li id="home" class=""><a href="/">Home</a></li>
+                            <li id="about"><a href="/about">About Us</a></li>
+                            <li id="classes"><a href="/classes">Classes</a></li>
+                            <li id="services"><a href="/services">Services</a></li>
+                            <li id="trainers"><a href="/trainers">Trainers</a></li>
+                            <li id="contact"><a href="/contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="top-option">
+                        <div class="to-social">
+                            {% if not frappe.session.user %}
+                            <a href="/login"><i class="fa fa-sign-in"></i> Signin</a>
+                            {% else %}
+                            <a href="/profile"><i class="fa fa-user"></i> Profile</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas-open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    {% block page_content %} {% endblock %}
+
+    <!-- Get In Touch Section Begin -->
+    <div class="gettouch-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gt-text">
+                        <i class="fa fa-map-marker"></i>
+                        <p>333 Middle Winchendon Rd, Rindge,<br/> NH 03461</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gt-text">
+                        <i class="fa fa-mobile"></i>
+                        <ul>
+                            <li>125-711-811</li>
+                            <li>125-668-886</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gt-text email">
+                        <i class="fa fa-envelope"></i>
+                        <p>Support.gymcenter@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Get In Touch Section End -->
+
+    <!-- Footer Section Begin -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="fs-about">
+                        <div class="fa-logo">
+                            <a href="#"><img src="/assets/gms/img/logo.png" alt=""></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore dolore magna aliqua endisse ultrices gravida lorem.</p>
+                        <div class="fa-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa  fa-envelope-o"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="fs-widget">
+                        <h4>Useful links</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="fs-widget">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Subscribe</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="fs-widget">
+                        <h4>Tips & Guides</h4>
+                        <div class="fw-recent">
+                            <h6><a href="#">Physical fitness may help prevent depression, anxiety</a></h6>
+                            <ul>
+                                <li>3 min read</li>
+                                <li>20 Comment</li>
+                            </ul>
+                        </div>
+                        <div class="fw-recent">
+                            <h6><a href="#">Fitness: The best exercise to lose belly fat and tone up...</a></h6>
+                            <ul>
+                                <li>3 min read</li>
+                                <li>20 Comment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright-text">
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="/assets/gms/js/jquery-3.3.1.min.js"></script>
+    <script src="/assets/gms/js/bootstrap.min.js"></script>
+    <script src="/assets/gms/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/gms/js/masonry.pkgd.min.js"></script>
+    <script src="/assets/gms/js/jquery.barfiller.js"></script>
+    <script src="/assets/gms/js/jquery.slicknav.js"></script>
+    <script src="/assets/gms/js/owl.carousel.min.js"></script>
+    <script src="/assets/gms/js/main.js"></script>
+    {% block page_script %} {% endblock %}
+</body>
 </html>
