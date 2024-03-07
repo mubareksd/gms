@@ -18,7 +18,7 @@
  "list_columns": [],
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2024-03-04 16:03:53.557480",
+ "modified": "2024-03-07 17:09:14.001496",
  "modified_by": "Administrator",
  "module": "Gms",
  "name": "capture-measurement",
@@ -70,6 +70,58 @@
    "precision": "",
    "read_only": 0,
    "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "hidden": 0,
+   "label": "Height",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "body_mass_index",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Body Mass Index",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "body_fat_percentage",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Body Fat Percentage",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "muscle_mass",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Muscle Mass",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
    "show_in_filter": 0
   }
  ]
